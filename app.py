@@ -18,8 +18,8 @@ except LookupError:
 
 # Load model and vectorizer
 try:
-    model = joblib.load('P:\\Soulpage IT Solutions\\ASS\\Models\\sentiment_model.pkl')
-    tfidf = joblib.load('P:\\Soulpage IT Solutions\\ASS\\Models\\tfidf_vectorizer.pkl')
+    model = joblib.load('Models/sentiment_model.pkl')
+    tfidf = joblib.load('Models/tfidf_vectorizer.pkl')
 except FileNotFoundError:
     st.error("Model or vectorizer file not found. Please ensure 'sentiment_model.pkl' and 'tfidf_vectorizer.pkl' are in the correct directory.")
     st.stop()
